@@ -1,0 +1,25 @@
+﻿<Window x:Class="FlappyBird.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FlappyBird"
+        mc:Ignorable="d"
+        Title="Flappy Bird" Height="450" Width="525" >
+    <Canvas Name="GameCanvas" Focusable="True" Background="LightBlue" KeyDown="KeyIsDown" KeyUp="KeyIsUp" >
+
+        <Image Width="175" Height="317" Source="Assets/Bottom_Pipe.png" Tag ="obs1" Canvas.Top="249" Canvas.Left="73" />
+        <Image Width="175" Height="317" Source="Assets/Top_Pipe.png" Tag ="obs1" Canvas.Top="-207" Canvas.Left="73" />
+
+        <Image Width="175" Height="317" Source="Assets/Bottom_Pipe.png" Tag ="obs2" Canvas.Top="345" Canvas.Left="217" />
+        <Image Width="175" Height="317" Source="Assets/Top_Pipe.png" Tag ="obs2" Canvas.Top="-111" Canvas.Left="217" />
+
+        <Image Width="175" Height="318" Source="Assets/Bottom_Pipe.png" Tag ="obs3" Canvas.Top="198" Canvas.Left="374" />
+        <Image Width="175" Height="318" Source="Assets/Top_Pipe.png" Tag ="obs3" Canvas.Top="-258" Canvas.Left="374" />
+
+        <Image Name="flappyBird" Width="50" Height="44" Source="Assets/flappyBird.png" Stretch="Fill" Canvas.Left="-25" Canvas.Top="162"/>
+
+        <Label Name="txtScore" FontSize="22" FontWeight="ExtraBold" Content="Score: 0"/>
+
+    </Canvas>
+</Window>
